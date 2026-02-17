@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffafc;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background-color: #ffb6c1;
+  padding: 15px 30px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO */
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+}
+
+/* MENU */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* CONTEÚDO */
+main {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* TÍTULOS */
+h2 {
+  margin-bottom: 20px;
+  color: #ff69b4;
+}
+
+/* PRODUTOS */
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+/* FORMULÁRIO */
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input, textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+button {
+  padding: 12px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff1493;
+}
+
+/* BOTÃO WHATSAPP */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  padding: 15px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.whatsapp:hover {
+  background-color: #1ebe5d;
+}
+
+/* RODAPÉ */
+footer {
+  margin-top: 40px;
+  padding: 15px;
+  background-color: #ffe4e9;
+}
+/* GALERIA */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.galeria img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* DEPOIMENTOS */
+.depoimentos {
+  display: grid;
+  gap: 15px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.depoimento {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* TABELA DE PREÇOS */
+.tabela-precos {
+  max-width: 500px;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.tabela-precos td {
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  text-align: left;
+}
+
+/* BOTÃO AGENDAR */
+.agendar {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #ff69b4;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
